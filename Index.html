@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="Mind.css" rel="stylesheet" type="text/css" />
+    <title>Mind 🧘‍♀️</title>
+    
+  </head>
+  <body>
+    <div class="box">
+      <h1>Every Mind Matters</h1>
+      <h2>Looking after your mental health</h2>
+
+      <figure>
+        <img
+          src="https://cdn.mindful.org/MindfulnessofBreath.jpg?q=80&fm=jpg&fit=crop&w=1400&h=875"
+          alt="Deep Breath"
+        />
+      </figure>
+      <p>
+        Mindfulness. It’s a pretty <em>straightforward</em> word. It suggests
+        that the mind is fully attending to what’s happening, to what you’re
+        doing, to the space you’re moving through. That might seem trivial,
+        except for the annoying fact that we so often veer from the matter at
+        hand. Our mind takes flight, we lose touch with our body, and pretty
+        soon we’re engrossed in obsessive thoughts about something that just
+        happened or fretting about the future.
+        <span>And that makes us anxious.</span>Yet no matter how far we drift
+        away, mindfulness is right there to snap us back to where we are and
+        what we’re doing and feeling. If you want to know what mindfulness is,
+        it’s best to try it for a while. Since it’s hard to nail down in words,
+        you will find slight variations in the meaning in books, websites,
+        audio, and video.
+      </p>
+      <a href="https://www.mindful.org/"> Learn more 🧲 </a>
+      <br />
+
+      <button class="contact"><strong> 👉 Contact us 👈 </strong></button>
+
+      <hr />
+      <footer>Coded by Laura</footer>
+    </div>
+    <script>
+      function subscribe() {
+        let firstName = prompt("What is your name?");
+        let email = prompt("What is your email?");
+        let age = prompt("How old are you?");
+        let h1 = document.querySelector("h1");
+        if (age >= 18) {
+          alert("We will be in touch. Meanwhile, take a deep breath 🍀 ");
+        } else {
+          h1.innerHTML =
+            "Hi " + firstName + ".<br /> Sorry! You are too young. <br />👶 ";
+        }
+      }
+      let button = document.querySelector("button");
+      button.addEventListener("click", subscribe);
+    </script>
+  </body>
+</html>
+</br> <i class="fas fa-wind"></i> 5km/h <i class="fas fa-tint"></i> 10 %
